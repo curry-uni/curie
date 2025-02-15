@@ -1,0 +1,38 @@
+/* animations.css */
+
+
+
+@keyframes moveLeft {
+    0% { transform: translate(0%, 0%); }
+    100% { transform: translate(-200%, 0%); }}
+  @keyframes revealRight {
+    0% { opacity: 0; clip-path: inset(0 100% 0 0); }
+    100% { opacity: 1; clip-path: inset(0 0 0 0); }}
+@keyframes fadeIn {from { opacity: 0; } to { opacity: 1; }}
+@keyframes show {from { opacity: 0; } to { opacity: 1; }}
+@keyframes fadeText {0% {opacity: 1;} 100% {opacity: 0;} }
+@keyframes revealLeft {from {clip-path: inset(0 0 0 0);}to {clip-path: inset(0 100% 0 0);}}
+
+@keyframes fadeIn { 0% { opacity: 0;} 100% { opacity: 1;}}
+@keyframes fadeOut {0% { opacity: 1;} 100% {opacity: 0; visibility:hidden;}}
+@keyframes bounce {0% { transform: translateY(0);} 100% { transform: translateY(10px);}}
+
+@keyframes fadeInUp {from{transform: translateY(20px); opacity:0;} to {transform: translateY(0); opacity: 1;}}
+
+  /* Text gradient animation */
+  @keyframes textFlow {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}}
+  @keyframes shineEffect {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(200%) rotate(45deg); }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  nav ul { flex-direction:column; padding:10px;}}
+@keyframes slideDown {
+  from {transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1;}
+}
